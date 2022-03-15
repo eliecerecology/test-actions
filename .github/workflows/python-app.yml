@@ -39,6 +39,6 @@ jobs:
 
         git config --global user.email "eliecerecology@gmail.com"
         git config --global user.name eliecerecology
-
+        git add .
         git commit -m "report"
         
