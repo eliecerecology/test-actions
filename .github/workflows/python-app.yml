@@ -25,11 +25,12 @@ jobs:
         pip install -r requirements.txt
         python src/train.py
         pwd
-        ls
         
+        echo "HELLO!!!"
         echo "# Model Metrics" > report.md
         cat metrics.txt >> report.md
-
+        
+        ls
         echo "## Data Viz" >> report.md
         cml-publish feature_importance.png --md >> report.md
         cml-publish residuals.png --md >> report.md
