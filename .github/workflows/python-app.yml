@@ -28,6 +28,11 @@ jobs:
         python src/train.py
         pwd
         ls
+        ecch "## Model Metrics"
         cat metrics.txt >> report.md
-        cml-send-comment report.md
+
+        echo "## Data Viz"
+        cml-publish feature_importance.png --md >> report.md
+
+        cml-send.comment report.md       
         
