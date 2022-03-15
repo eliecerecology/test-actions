@@ -34,4 +34,8 @@ jobs:
     - name: Test with pytest
       run: |
         export PYTHONPATH=src
+        python train.py
+
+#cat results.text >> report.md
+#        cml-send-comment report.md
         
