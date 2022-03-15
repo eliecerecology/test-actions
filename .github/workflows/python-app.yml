@@ -33,7 +33,5 @@ jobs:
         cat metrics.txt >> report.md
 
         echo "## Data Viz"
-        cml-publish feature_importance.png --md >> report.md
-
-        cml-send-comment report.md       
+        git commit -m "train20"  
         
