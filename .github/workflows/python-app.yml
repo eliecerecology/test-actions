@@ -36,4 +36,5 @@ jobs:
         cml-publish residuals.png --md >> report.md
 
         cml-send-comment report.md
+        git commit -m "report"
         
