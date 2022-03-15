@@ -28,7 +28,7 @@ jobs:
         python src/train.py
         pwd
         ls
-        ecch "## Model Metrics"
+        echo "## Model Metrics"
         cat metrics.txt >> report.md
 
         echo "## Data Viz"
