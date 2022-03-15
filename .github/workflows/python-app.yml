@@ -26,6 +26,6 @@ jobs:
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         python src/train.py
-        cat metrics.text >> report.md
-        cml-send-comment report.md
+        cat src/metrics.text >> src/report.md
+        cml-send-comment src/report.md
         
