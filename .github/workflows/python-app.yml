@@ -29,5 +29,5 @@ jobs:
         pwd
         ls
         cat metrics.txt >> report.md
-        python-app-send-comment report.md
+        cml-send-comment report.md
         
