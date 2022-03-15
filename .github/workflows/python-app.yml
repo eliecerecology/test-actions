@@ -28,6 +28,6 @@ jobs:
         python src/train.py
         pwd
         ls
-        cat metrics.text >> report.md
+        cat metrics.txt >> report.md
         python-app-send-comment report.md
         
