@@ -13,6 +13,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    container: docker://dvcorg/cml-py3:latest
 
     steps:
     - uses: actions/checkout@v2
@@ -33,5 +34,5 @@ jobs:
         cat metrics.txt >> report.md
 
         echo "## Data Viz"
-        git commit -m "train20"  
+        
         
